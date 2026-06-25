@@ -18,7 +18,14 @@ public class virus : MonoBehaviour
     {
         if (collision.gameObject.tag == "bullet")
         {
-            IntVirus -= 1;
+            if(IntVirus > 0)
+            {
+                IntVirus -= 1;
+            }
+            else
+            {
+                Debug.Log("Остров уже здоров");
+            }
             Debug.Log(IntVirus);
             
         }

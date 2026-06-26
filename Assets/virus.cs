@@ -3,10 +3,16 @@ using UnityEngine;
 public class virus : MonoBehaviour
 {
     private int IntVirus;
+    public Material VirusPlatform;
+    public Material HealthyPlatform;
     void Start()
     {
         IntVirus = Random.Range(0, 6);
         Debug.Log(IntVirus);
+        if(IntVirus > 0)
+        {
+            GetComponent<MeshRenderer>().material = VirusPlatform;
+        }
     }
 
     // Update is called once per frame
@@ -25,6 +31,7 @@ public class virus : MonoBehaviour
             else
             {
                 Debug.Log("Остров уже здоров");
+                GetComponent<MeshRenderer>().material = HealthyPlatform;
             }
             Debug.Log(IntVirus);
             

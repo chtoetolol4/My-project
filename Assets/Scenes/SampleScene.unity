@@ -505,6 +505,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (8)

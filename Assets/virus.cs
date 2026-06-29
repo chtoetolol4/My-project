@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class virus : MonoBehaviour
 {
-    private int IntVirus;
+    public int IntVirus;
     public Material VirusPlatform;
     public Material HealthyPlatform;
     public GameObject VirusCounterObject;

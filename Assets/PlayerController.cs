@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using TMPro;
+using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
@@ -64,4 +65,24 @@ public class PlayerController : MonoBehaviour
             
         }
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Island")
+        {
+            Debug.Log("Столкновение с островом");
+            virus Islandvirus = collision.gameObject.GetComponent<virus>();
+            if(Islandvirus.IntVirus > 0)
+            {
+                Score score = GetComponent<Score>();
+                if(score.count > 0)
+                {
+                    score.count -= 1;
+                }
+                else
+                {
+                    
+                }
+            }
+        }
+    } 
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class VirusCounter : MonoBehaviour
 {
-    public int viruscounter = 0;
+    public int counter = 0;
     void Start()
     {
         

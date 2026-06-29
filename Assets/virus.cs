@@ -5,17 +5,16 @@ public class virus : MonoBehaviour
     private int IntVirus;
     public Material VirusPlatform;
     public Material HealthyPlatform;
-    public GameObject VirusCounter;
+    public GameObject VirusCounterObject;
     private VirusCounter virusCounter;
     void Start()
     {
-        virusCounter = VirusCounter.GetComponent<VirusCounter>();
+        virusCounter = VirusCounterObject.GetComponent<VirusCounter>();
         IntVirus = Random.Range(0, 6);
         Debug.Log(IntVirus);
-        if(IntVirus > 0)
-        if(virusCounter.viruscounter < 2)
+        if(virusCounter.counter < 2 && IntVirus > 0)
         {
-            virusCounter.viruscounter += 1;
+            virusCounter.counter += 1;
             GetComponent<MeshRenderer>().material = VirusPlatform;
         }
 

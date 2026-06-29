@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &21589800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
@@ -5628,6 +5628,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (5)
@@ -5743,7 +5747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -7233,47 +7237,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683337254}
   m_CullTransparentMesh: 1
---- !u!1 &685756189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-  m_PrefabInstance: {fileID: 1263535078}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &685756191
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685756189}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
-  m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &685756192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685756189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
 --- !u!1 &686930355
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,7 +7414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 1841258892}
 --- !u!1001 &742200804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7464,6 +7427,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a1241e6dfb96ea6468d8d93af958df74, type: 2}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (3)
@@ -8240,138 +8207,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1014338653
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 559416018925234607, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: a1241e6dfb96ea6468d8d93af958df74, type: 2}
-    - target: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_TagString
-      value: Island
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_Name
-      value: CrossPlains_Floating_Island_01 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_TagString
-      value: Island
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.88902247
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.96365786
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.88902247
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.0029
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 50.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8963481
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.44335094
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -52.636
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6067763540614858002, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1014338656}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1014338655}
-  m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
---- !u!1 &1014338654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-  m_PrefabInstance: {fileID: 1014338653}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1014338655
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014338654}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
-  m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &1014338656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014338654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
 --- !u!1 &1016434174
 GameObject:
   m_ObjectHideFlags: 0
@@ -8487,7 +8322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &1050659054
 GameObject:
   m_ObjectHideFlags: 0
@@ -13584,33 +13419,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 559416018925234607, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
       value: 
-      objectReference: {fileID: 2100000, guid: a1241e6dfb96ea6468d8d93af958df74, type: 2}
-    - target: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_TagString
-      value: Island
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_TagString
-      value: Island
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.88902247
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.96365786
-      objectReference: {fileID: 0}
-    - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.88902247
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13652,20 +13467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6067763540614858002, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 685756192}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 685756191}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
 --- !u!1001 &1280600869
 PrefabInstance:
@@ -13679,6 +13484,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a1241e6dfb96ea6468d8d93af958df74, type: 2}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (1)
@@ -13876,7 +13685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 0}
 --- !u!65 &1336279039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13938,7 +13747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 0}
 --- !u!1 &1379104607
 GameObject:
   m_ObjectHideFlags: 0
@@ -14862,6 +14671,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (2)
@@ -14977,7 +14790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 0}
 --- !u!1 &1733760467
 GameObject:
   m_ObjectHideFlags: 0
@@ -15830,7 +15643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::virus
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounter: {fileID: 0}
+  VirusCounterObject: {fileID: 0}
 --- !u!1001 &1823184564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15847,6 +15660,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (9)
@@ -15931,8 +15748,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1841258893}
+  - component: {fileID: 1841258894}
   m_Layer: 0
-  m_Name: VirusCounter
+  m_Name: VirusCounterObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15953,6 +15771,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841258894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841258892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b871b2d907b2343bdd05c58753ecea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VirusCounter
+  counter: 0
 --- !u!1001 &1852745162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15965,6 +15796,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a1241e6dfb96ea6468d8d93af958df74, type: 2}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01
@@ -16041,6 +15876,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (10)
@@ -21286,6 +21125,5 @@ SceneRoots:
   - {fileID: 1907657468}
   - {fileID: 210331257}
   - {fileID: 213752686}
-  - {fileID: 1014338653}
   - {fileID: 296223340}
   - {fileID: 1841258893}

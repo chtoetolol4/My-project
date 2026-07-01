@@ -145,22 +145,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &19953311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19953308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &21589800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
@@ -415,6 +399,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (11)
@@ -483,9 +471,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 709038890}
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 709038889}
@@ -580,9 +565,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1813537432}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1813537431}
   m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
 --- !u!1001 &213752686
@@ -601,6 +583,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (12)
@@ -669,9 +655,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 19953311}
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 19953310}
@@ -5663,7 +5646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.32
+      value: 5.72
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5707,9 +5690,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 296223343}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 296223342}
   m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
 --- !u!1 &296223341 stripped
@@ -5738,22 +5718,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &296223343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296223341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,6 +6644,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 2673867512256305974, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+      propertyPath: VirusCounterObject
+      value: 
+      objectReference: {fileID: 1841258892}
     - target: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_01 (6)
@@ -6748,9 +6716,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1041401376}
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1041401375}
@@ -6867,7 +6832,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &570938137
@@ -7407,22 +7372,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &709038890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709038887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 1841258892}
 --- !u!1001 &742200804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7465,7 +7414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.675
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8052,15 +8001,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 37.8
+      value: 28.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 195.3
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8316,22 +8265,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &1041401376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041401373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 1841258892}
 --- !u!1 &1050659054
 GameObject:
   m_ObjectHideFlags: 0
@@ -13680,22 +13613,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
   m_PrefabInstance: {fileID: 1722592300}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1336279038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336279034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 0}
 --- !u!65 &1336279039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13743,22 +13660,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &1342070519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342070516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 0}
 --- !u!1 &1379104607
 GameObject:
   m_ObjectHideFlags: 0
@@ -14756,9 +14657,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1336279038}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1336279039}
   m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
 --- !u!1 &1733542942 stripped
@@ -14787,22 +14685,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &1733542945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733542942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 0}
 --- !u!1 &1733760467
 GameObject:
   m_ObjectHideFlags: 0
@@ -15641,22 +15523,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.1165495, y: 1.2399051, z: 13.83338}
   m_Center: {x: -0.043315887, y: 0.61994874, z: -0.020666359}
---- !u!114 &1813537432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813537429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::virus
-  IntVirus: 0
-  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
-  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 0}
 --- !u!1001 &1823184564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15747,9 +15613,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1733542945}
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1733542944}
   m_SourcePrefab: {fileID: 100100000, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
 --- !u!1 &1841258892
@@ -15827,11 +15690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.96
+      value: 5.99
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.1
+      value: 41.3
       objectReference: {fileID: 0}
     - target: {fileID: 5441098261372279910, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15961,9 +15824,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1342070519}
     - targetCorrespondingSourceObject: {fileID: 1337602936979128602, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1342070518}

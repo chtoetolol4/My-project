@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
                 {
                     score.count -= 1;
                     Debug.Log("Минус монетка");
+                    scoreText.text = "Coins: " + score.count;
                 }
                 else
                 {

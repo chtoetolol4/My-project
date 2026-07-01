@@ -67,16 +67,18 @@ public class PlayerController : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Island")
+        if (collision.gameObject.CompareTag("Island"))
         {
             Debug.Log("Столкновение с островом");
             virus Islandvirus = collision.gameObject.GetComponent<virus>();
-            if(Islandvirus.IntVirus > 0)
+            if(Islandvirus != null && Islandvirus.IntVirus > 0)
             {
+                Debug.Log("Остров заражен");
                 Score score = GetComponent<Score>();
                 if(score.count > 0)
                 {
                     score.count -= 1;
+                    Debug.Log("Минус монетка");
                 }
                 else
                 {

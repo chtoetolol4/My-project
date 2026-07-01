@@ -17,6 +17,10 @@ public class virus : MonoBehaviour
             virusCounter.counter += 1;
             GetComponent<MeshRenderer>().material = VirusPlatform;
         }
+        else
+        {
+            IntVirus = 0;
+        }
 
     }
 

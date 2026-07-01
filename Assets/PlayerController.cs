@@ -80,7 +80,10 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    
+                    CanvasScoreText.SetActive(false);
+                    GameOver.SetActive(true);
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                 }
             }
         }

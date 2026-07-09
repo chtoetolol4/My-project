@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
             GameOver.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            speed = 0;
         }
         if (hit.gameObject.CompareTag("Coin"))
         {

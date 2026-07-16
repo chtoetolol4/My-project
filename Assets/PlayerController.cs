@@ -7,7 +7,7 @@ using System.Threading;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
-    private float speed = 7f;
+    public float speed = 7f;
     private float gravity = -9.81f;
     private float jumpHeight = 7f;
     private Vector3 velocity;
@@ -63,7 +63,8 @@ public class PlayerController : MonoBehaviour
         }
         if (hit.gameObject.CompareTag("Coin"))
         {
-            
+            Banana bananascript = GetComponent<CurrentAmmo>();
+            bananascript.CurrentAmmo = 18;
         }
     }
     void OnCollisionEnter(Collision collision)

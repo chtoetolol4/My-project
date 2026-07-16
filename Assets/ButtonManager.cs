@@ -7,7 +7,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject CoinCounter;
     public GameObject PauseMenu;
     public GameObject Player;
-    private Movement movement;
+    public PlayerController PlayerController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +24,7 @@ public class ButtonManager : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            movement.enabled = false;
+            PlayerController.speed = 0;
         }
     }  
     public void OnRestartButton()
@@ -38,8 +38,6 @@ public class ButtonManager : MonoBehaviour
         CoinCounter.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        movement = Player.GetComponent<Movement>();
-        movement.enabled = true;
 
     }
     public void OnContinueButton()
@@ -49,6 +47,5 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        movement.enabled = true;
     }
 }

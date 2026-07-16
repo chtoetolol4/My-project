@@ -6843,7 +6843,6 @@ GameObject:
   m_Component:
   - component: {fileID: 561413689}
   - component: {fileID: 561413688}
-  - component: {fileID: 561413690}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -6882,18 +6881,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &561413690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561413687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca773bc3991cb846b2a3997d83532c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
 --- !u!1 &570938133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
@@ -6949,18 +6936,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &570938138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570938133}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9fe641103ea2747b2b27d0b9cb3afe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!4 &570938140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
@@ -15590,9 +15565,6 @@ PrefabInstance:
       addedObject: {fileID: 570938137}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 570938138}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 570938142}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       insertIndex: -1
@@ -16100,24 +16072,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -3281393901467115004, guid: 81bb9eea30387e442899949a80011e55, type: 3}
   m_PrefabInstance: {fileID: 1807296026}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &1983413713
-Animation:
+--- !u!95 &1983413713
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983413711}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: f0c31ab12f357d94cacfce4a08b34924, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: f0c31ab12f357d94cacfce4a08b34924, type: 2}
-  - {fileID: 7400000, guid: df12fd777f3a6284b86cb46a995b3fc1, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
+  m_Avatar: {fileID: 9000000, guid: 81bb9eea30387e442899949a80011e55, type: 3}
+  m_Controller: {fileID: 9100000, guid: 7f880cf9e5f0f2b499a91cf6fea0403b, type: 2}
+  m_CullingMode: 0
   m_UpdateMode: 0
-  m_CullingType: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1983413714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16130,7 +16106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd8ddf0c42191c42b81ba9d3f847bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::animation
-  handanimator: {fileID: 0}
+  handanimator: {fileID: 1983413713}
 --- !u!1 &2030045766
 GameObject:
   m_ObjectHideFlags: 0

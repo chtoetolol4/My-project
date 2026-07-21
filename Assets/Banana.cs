@@ -26,8 +26,7 @@ public class Banana : MonoBehaviour
             effect.SetActive(true);
             bananeffect.Play(true);
             CurrentAmmo -= 1;
-            AmmoText.text = CurrentAmmo + "/18";
         }
-
+        AmmoText.text = CurrentAmmo + "/18";
     }
 }

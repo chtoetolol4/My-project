@@ -47,5 +47,6 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        PlayerController.speed = 7;
     }
 }

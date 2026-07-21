@@ -16,5 +16,4 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(new Vector3(0, 1, 0) * BulletSpeed * Time.deltaTime);
     }
-
 }

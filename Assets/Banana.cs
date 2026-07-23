@@ -11,6 +11,10 @@ public class Banana : MonoBehaviour
     public ParticleSystem bananeffect;
     public int CurrentAmmo;
     public TextMeshProUGUI AmmoText;
+    public Material NormalMaterial;
+    public Material WorseMaterial;
+    public Material NoAmmoMaterial;
+    public GameObject BananMesh;
     void Start()
     {
         CurrentAmmo = 18;
@@ -28,5 +32,20 @@ public class Banana : MonoBehaviour
             CurrentAmmo -= 1;
         }
         AmmoText.text = CurrentAmmo + "/18";
+        if (CurrentAmmo > 9)
+        {
+            BananMesh.GetComponent<MeshRenderer>().material = NormalMaterial;
+        }
+        else
+        {
+            if (CurrentAmmo > 0 && CurrentAmmo <= 9)
+            {
+                BananMesh.GetComponent<MeshRenderer>().material = WorseMaterial;
+            }
+            else
+            {
+                BananMesh.GetComponent<MeshRenderer>().material = NoAmmoMaterial;
+            }
+        }
     }
 }

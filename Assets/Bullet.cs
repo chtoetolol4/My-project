@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using System.Collections;
 
 public class Bullet : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Bullet : MonoBehaviour
     
     void Start()
     {
-        
+        StartCoroutine(DestroyBullet());
     }
 
     // Update is called once per frame
@@ -16,4 +17,10 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(new Vector3(0, 1, 0) * BulletSpeed * Time.deltaTime);
     }
+    IEnumerator DestroyBullet()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(gameObject);   
+    } 
+
 }

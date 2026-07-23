@@ -7043,8 +7043,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.7
-  m_Height: 2.3
+  m_Radius: 0.5
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &570938137
@@ -7111,6 +7111,7 @@ MonoBehaviour:
   GameOver: {fileID: 995109487}
   CanvasScoreText: {fileID: 1946240561}
   AmmoText: {fileID: 88429342}
+  Arm: {fileID: 577340973}
 --- !u!143 &570938144
 CharacterController:
   m_ObjectHideFlags: 0

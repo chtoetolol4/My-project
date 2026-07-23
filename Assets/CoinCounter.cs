@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class CoinCounter : MonoBehaviour
 {   
-    private int count;
+    public int count;
     void Start()
     {
 

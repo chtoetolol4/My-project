@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public GameObject GameOver;
     public GameObject CanvasScoreText;
     public TextMeshProUGUI AmmoText;
+    public GameObject Arm;
 
     void Start()
     {
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
         }
         if (hit.gameObject.CompareTag("Coin"))
         {
-            Banana bananascript = GetComponent<Banana>();
+            Banana bananascript = Arm.GetComponent<Banana>();
             bananascript.CurrentAmmo = 18;
         }
     }

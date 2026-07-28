@@ -49,4 +49,8 @@ public class ButtonManager : MonoBehaviour
         Cursor.visible = false;
         PlayerController.speed = 7;
     }
+    public void OnBeskonechniyButton()
+    {
+        SceneManager.LoadScene("Endless");
+    }
 }

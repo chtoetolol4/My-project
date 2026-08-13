@@ -11,7 +11,6 @@ public class EndlessController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            Debug.Log("Число: " + i);
             IslandsPositionZ[i] = Random.Range(0, 5f);
             if (IslandsPositionZ[i] >= 2f)
             {
@@ -21,15 +20,16 @@ public class EndlessController : MonoBehaviour
             {
                 Multiplier = 1;
             }
-            if (i > 3)
+            DeltaY = Random.Range(0.5f, 2f);
+            if (i > 3f)
             {
-                MultiplierY = -1f;
+                MultiplierY = -1;
             }
             else
             {
                 MultiplierY = 1;
             }
-            Instantiate(Island, new Vector3(i + IslandsPositionZ[i] * Multiplier,MultiplierY * DeltaY,i + IslandsPositionZ[i]), Quaternion.identity);
+            Instantiate(Island, new Vector3(i + IslandsPositionZ[i] * Multiplier,(i + IslandsPositionZ[i] * Multiplier) * 0.15f, i + IslandsPositionZ[i]), Quaternion.identity);
         } 
     }
 

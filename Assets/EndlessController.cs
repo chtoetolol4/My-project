@@ -29,7 +29,7 @@ public class EndlessController : MonoBehaviour
             {
                 MultiplierY = 1;
             }
-            Instantiate(Island, new Vector3(i + IslandsPositionZ[i] * Multiplier,(i + IslandsPositionZ[i] * Multiplier) * 0.15f, i + IslandsPositionZ[i]), Quaternion.identity);
+            Instantiate(Island, new Vector3(i * 10 + IslandsPositionZ[i] * Multiplier,(i + IslandsPositionZ[i] * Multiplier) * 0.15f, i * 10 + IslandsPositionZ[i]), Quaternion.identity);
         } 
     }
 

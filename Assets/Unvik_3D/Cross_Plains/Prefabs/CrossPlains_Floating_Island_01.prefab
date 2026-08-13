@@ -108,7 +108,7 @@ MonoBehaviour:
   IntVirus: 0
   VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
   HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
-  VirusCounterObject: {fileID: 0}
+  VirusCounterObject: {fileID: 7662031936702251404, guid: 24dd35f7729c3c54e97e8bac4a4c50ec, type: 3}
 --- !u!65 &5350572983998600714
 BoxCollider:
   m_ObjectHideFlags: 0

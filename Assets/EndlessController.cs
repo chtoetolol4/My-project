@@ -6,7 +6,8 @@ public class EndlessController : MonoBehaviour
     public GameObject Island;
     private float Multiplier = 1;
     private float DeltaY;
-    private float MultiplierY = 1;
+    public Material VirusMaterial;
+    public Material HealthyMaterial;
     void Start()
     {
         for (int i = 0; i < 5; i++)
@@ -21,13 +22,9 @@ public class EndlessController : MonoBehaviour
                 Multiplier = 1;
             }
             DeltaY = Random.Range(0.5f, 2f);
-            if (i > 3f)
+            if (i > 4)
             {
-                MultiplierY = -1;
-            }
-            else
-            {
-                MultiplierY = 1;
+                Island.GetComponent<MeshRenderer>().material = VirusMaterial;
             }
             Instantiate(Island, new Vector3(i * 10 + IslandsPositionZ[i] * Multiplier,(i + IslandsPositionZ[i] * Multiplier) * 0.15f, i * 10 + IslandsPositionZ[i]), Quaternion.identity);
         } 

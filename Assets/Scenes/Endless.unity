@@ -148,7 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380f345467a045648a96522d4e9926a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndlessController
-  Island: {fileID: 4668397346351433436, guid: b4a88aee496a96d49aee9abc46419cad, type: 3}
+  Island: {fileID: 6219529552074429045, guid: 07200ce2e6db72d4391bf48a4d5db9dc, type: 3}
+  VirusMaterial: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
+  HealthyMaterial: {fileID: 2100000, guid: 42d97ea11edde1d4494480d6643c7a88, type: 2}
 --- !u!4 &384554155
 Transform:
   m_ObjectHideFlags: 0

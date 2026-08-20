@@ -22,11 +22,16 @@ public class EndlessController : MonoBehaviour
                 Multiplier = 1;
             }
             DeltaY = Random.Range(0.5f, 2f);
-            if (i > 4)
-            {
-                Island.GetComponent<MeshRenderer>().material = VirusMaterial;
-            }
             Instantiate(Island, new Vector3(i * 10 + IslandsPositionZ[i] * Multiplier,(i + IslandsPositionZ[i] * Multiplier) * 0.15f, i * 10 + IslandsPositionZ[i]), Quaternion.identity);
+            if (i == 4)
+            {
+                Transform childTransform = Island.transform.Find("floe.011");
+                    if (childTransform != null)
+                    {
+                        GameObject childObject = childTransform.gameObject;
+                        childObject.GetComponent<MeshRenderer>().material = VirusMaterial;
+                    }
+            }
         } 
     }
 

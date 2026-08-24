@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RandomNubers : MonoBehaviour
 {
-    float Number = 2;
+    float Number = 4;
     float M = 1;
     int Count = 1;
     int DeciderRandom = 1;
@@ -22,7 +22,7 @@ public class RandomNubers : MonoBehaviour
             }
             if (Count > 3)
             {
-                Number = 1;
+                Number = 7;
             }
         }
     }

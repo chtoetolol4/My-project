@@ -34,11 +34,10 @@ public class ButtonManager : MonoBehaviour
     }
     public void OnPlayButton()
     {
-        MainMenu.SetActive(false);
-        CoinCounter.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
+        MainMenu.SetActive(false);
+        CoinCounter.SetActive(true);
     }
     public void OnContinueButton()
     {

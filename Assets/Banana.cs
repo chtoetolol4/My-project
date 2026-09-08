@@ -24,6 +24,7 @@ public class Banana : MonoBehaviour
     void Update()
     {
         bulletRotation = Quaternion.Euler(barrel.rotation.eulerAngles.x, barrel.rotation.eulerAngles.y, barrel.rotation.eulerAngles.z);
+
         if (Input.GetMouseButtonDown(0) && StartMenu.activeInHierarchy == false && CurrentAmmo > 0)
         {
             Instantiate(bullet, barrel.position, bulletRotation);
@@ -31,7 +32,9 @@ public class Banana : MonoBehaviour
             bananeffect.Play(true);
             CurrentAmmo -= 1;
         }
+
         AmmoText.text = CurrentAmmo + "/18";
+        
         if (CurrentAmmo > 9)
         {
             BananMesh.GetComponent<MeshRenderer>().material = NormalMaterial;

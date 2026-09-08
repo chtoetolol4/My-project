@@ -6940,7 +6940,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1.2, z: 2}
   m_Center: {x: 0.2, y: 0.2, z: 0}
@@ -7356,6 +7356,7 @@ MonoBehaviour:
   CanvasScoreText: {fileID: 1946240561}
   AmmoText: {fileID: 88429342}
   Arm: {fileID: 577340973}
+  FinishCanvas: {fileID: 1525411249}
 --- !u!143 &570938144
 CharacterController:
   m_ObjectHideFlags: 0
@@ -8515,6 +8516,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 522991028}
+    - targetCorrespondingSourceObject: {fileID: 7929479193688133552, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518141126}
   m_SourcePrefab: {fileID: 100100000, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
 --- !u!1 &982106828
 GameObject:
@@ -14537,9 +14541,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 0.9456895, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.9450981, b: 0, a: 1}
+    m_PressedColor: {r: 0.6509804, g: 0.6156863, b: 0, a: 1}
+    m_SelectedColor: {r: 0.6509434, g: 0.61520535, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14558,7 +14562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415963173}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561413688}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: OnRestartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1415963173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14901,6 +14917,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50072407e47bfc34b9ea3dcebfde1474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinLight
+--- !u!1 &1518141122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7929479193688133552, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
+  m_PrefabInstance: {fileID: 975087630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1518141126
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518141122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3482897971593640056, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
 --- !u!1 &1520620241
 GameObject:
   m_ObjectHideFlags: 0
@@ -14919,7 +14962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1520620242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15025,7 +15068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1525411250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17229,7 +17272,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002777785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

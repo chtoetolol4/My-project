@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public GameObject CanvasScoreText;
     public TextMeshProUGUI AmmoText;
     public GameObject Arm;
+    public GameObject FinishCanvas;
 
     void Start()
     {
@@ -100,7 +101,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            Debug.Log("Победаааа");
+            FinishCanvas.SetActive(true);
+            speed = 0;
+            Time.timeScale = 0f;
         }
     }
 }

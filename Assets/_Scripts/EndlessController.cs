@@ -21,6 +21,7 @@ public class EndlessController : MonoBehaviour
             for (int i = 0; i < 5; i++)
             {
                 IslandsPositionZ[i] = Random.Range(0, 5f);
+
                 if (IslandsPositionZ[i] >= 2f)
                 {
                     Multiplier = -1;
@@ -29,7 +30,9 @@ public class EndlessController : MonoBehaviour
                 {
                     Multiplier = 1;
                 }
+
                 DeltaY = Random.Range(0.5f, 2f);
+
                 if (p > 0)
                 {
                     DeltaP = p * 50;
@@ -38,6 +41,7 @@ public class EndlessController : MonoBehaviour
                 {
                     DeltaP = 1;
                 }
+
                 IslandX = i * 10 + IslandsPositionZ[i] * Multiplier + DeltaP;
                 IslandY = (i + IslandsPositionZ[i] * Multiplier) * 0.15f;
                 IslandZ = i * 10 + IslandsPositionZ[i] + DeltaP;
@@ -46,6 +50,7 @@ public class EndlessController : MonoBehaviour
                 randomvirus = Random.Range(1,5);
                 // Ищем дочерний объект в СОЗДАННОМ экземпляре, а не в префабе
                 Transform childTransform = newIsland.transform.Find("floe.011");
+                
                 if (childTransform != null)
                 {
                     GameObject childObject = childTransform.gameObject;

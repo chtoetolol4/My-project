@@ -11,7 +11,6 @@ public class virus : MonoBehaviour
     {
         virusCounter = VirusCounterObject.GetComponent<VirusCounter>();
         IntVirus = Random.Range(0, 6);
-        Debug.Log(IntVirus);
         if(virusCounter.counter < 2 && IntVirus > 0)
         {
             virusCounter.counter += 1;
@@ -39,10 +38,8 @@ public class virus : MonoBehaviour
             }
             else
             {
-                Debug.Log("Остров уже здоров");
                 GetComponent<MeshRenderer>().material = HealthyPlatform;
             }
-            Debug.Log(IntVirus);
             
         }
     } 

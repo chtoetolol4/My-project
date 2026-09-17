@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -8,10 +10,17 @@ public class ButtonManager : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject Player;
     public PlayerController PlayerController;
+    public GameObject WinMenu;
+    public UnityEvent OnMainMenuButton;
+    public Button OnMainMenuSomething;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         CoinCounter.SetActive(false);
+    }
+    void OnEnable()
+    {
+        OnMainMenuSomething.onClick.AddListener(OnBackToMenuButton);
     }
 
     // Update is called once per frame
@@ -26,10 +35,16 @@ public class ButtonManager : MonoBehaviour
             Cursor.visible = true;
             PlayerController.speed = 0;
         }
+
+        if (WinMenu.activeSelf == true)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }  
     public void OnRestartButton()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name; 
+        string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
     }
     public void OnPlayButton()
@@ -51,5 +66,9 @@ public class ButtonManager : MonoBehaviour
     public void OnBeskonechniyButton()
     {
         SceneManager.LoadScene("Endless");
+    }
+    public void OnBackToMenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

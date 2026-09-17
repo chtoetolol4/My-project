@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         
@@ -12,5 +13,14 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnStoryButton()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void OnEndlessModeButton()
+    {
+        SceneManager.LoadScene("Endless");
     }
 }

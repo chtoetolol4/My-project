@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4205618928744609157}
   - component: {fileID: 8651846497434146681}
   - component: {fileID: 5540706993463080386}
+  - component: {fileID: 1843153774920729850}
   m_Layer: 0
   m_Name: floe.011
   m_TagString: Island
@@ -188,6 +189,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8470049373670364707, guid: d97690d43e1b27b47b644c6d78f9a2f1, type: 3}
+--- !u!114 &1843153774920729850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578411594397619754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c77a643f24c63f4483cd73c0f15d2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::virus
+  IntVirus: 0
+  VirusPlatform: {fileID: 2100000, guid: d1ac7deafad8ae84289966b91e8dba80, type: 2}
+  HealthyPlatform: {fileID: 2100000, guid: f6583c8457a8f0a4780aba733de3e933, type: 2}
+  VirusCounterObject: {fileID: 7662031936702251404, guid: 24dd35f7729c3c54e97e8bac4a4c50ec, type: 3}
 --- !u!1 &2607714110673119881
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,17 @@ public class ButtonManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        CoinCounter.SetActive(false);
+        if (MainMenu.activeInHierarchy == true)
+        {
+           CoinCounter.SetActive(false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
     void OnEnable()
     {

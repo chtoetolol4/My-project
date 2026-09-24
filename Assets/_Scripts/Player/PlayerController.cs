@@ -80,11 +80,11 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Остров заражен");
                 Score score = GetComponent<Score>();
-                if(score.count > 0)
+                if(score.Count > 0)
                 {
-                    score.count -= 1;
+                    score.Count -= 1;
                     Debug.Log("Минус монетка");
-                    scoreText.text = "Coins: " + score.count;
+                    scoreText.text = "Coins: " + score.Count;
                 }
                 else
                 {

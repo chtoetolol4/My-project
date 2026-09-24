@@ -18,7 +18,7 @@ public class IIyctota : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

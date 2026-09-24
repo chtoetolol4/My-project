@@ -3,21 +3,21 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {   
-    public int count;
-    public TextMeshProUGUI scoreText;
+    public int Count;
+    public TextMeshProUGUI ScoreText;
 
     void Start()
     {
-        count = 0;
-        scoreText.text = "Coins: " + count.ToString();
+        Count = 0;
+        ScoreText.text = "Coins: " + Count.ToString();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            count++;
-            scoreText.text = "Coins: " + count.ToString();
+            Count++;
+            ScoreText.text = "Coins: " + Count.ToString();
             Destroy(collision.gameObject);
         }
     }

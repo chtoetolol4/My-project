@@ -30,7 +30,10 @@ public class ButtonManager : MonoBehaviour
     }
     void OnEnable()
     {
-        OnMainMenuSomething.onClick.AddListener(OnBackToMenuButton);
+        if (OnMainMenuSomething != null)
+        {
+            OnMainMenuSomething.onClick.AddListener(OnBackToMenuButton);
+        }
     }
 
     // Update is called once per frame
@@ -45,11 +48,13 @@ public class ButtonManager : MonoBehaviour
             Cursor.visible = true;
             PlayerController.speed = 0;
         }
-
-        if (WinMenu.activeSelf == true)
+        if (WinMenu != null)
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            if (WinMenu.activeSelf == true)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
     }  
     public void OnRestartButton()

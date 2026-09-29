@@ -7,6 +7,7 @@ public class Aura : MonoBehaviour
     public Score Coins;
     public PlayerController Controlllller;
     public Image AuraImage;
+    public Image AuraBG;
 
 
     void Start()
@@ -20,12 +21,23 @@ public class Aura : MonoBehaviour
         {
             UseAura();
         }
+
+        if (Coins.Count >= 3)
+        {
+            AuraBG.color = new Color(110, 255, 110);
+        }
+        else
+        {
+            AuraBG.color = new Color(188, 188, 188);
+        }
+
     }
 
     private void UseAura()
     {
-        Controlllller.speed = 10;
+        Controlllller.speed += 3;
         ViewModeeel.fieldOfView = 80;
         Coins.Count -= 3;
+        AuraImage.color = new Color(255, 255, 255);
     }
 }

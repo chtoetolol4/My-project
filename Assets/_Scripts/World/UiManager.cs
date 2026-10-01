@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonManager : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject CoinCounter;
@@ -13,6 +14,8 @@ public class ButtonManager : MonoBehaviour
     public GameObject WinMenu;
     public UnityEvent OnMainMenuButton;
     public Button OnMainMenuSomething;
+    public TextMeshProUGUI scoreText;
+    public Score MyScore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +37,11 @@ public class ButtonManager : MonoBehaviour
         {
             OnMainMenuSomething.onClick.AddListener(OnBackToMenuButton);
         }
+    }
+
+    void OnUpdateCoinText(int coins)
+    {
+        
     }
 
     // Update is called once per frame

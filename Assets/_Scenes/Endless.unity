@@ -2111,7 +2111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Score
   Count: 0
-  ScoreText: {fileID: 1633079871}
 --- !u!54 &1273245986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3151,6 +3150,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd2f0743025ff04ea5e73e5724602d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonManager
+--- !u!1 &1960865069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960865071}
+  - component: {fileID: 1960865070}
+  m_Layer: 0
+  m_Name: 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1960865070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960865069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c848582862643a84abf74281c226479b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Test
+--- !u!4 &1960865071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960865069}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.50861, y: 2.46635, z: -0.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091115009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,7 +3245,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 899428785388124113, guid: 2a497351612e77d4e8fadcf1529c5c46, type: 3}
       propertyPath: m_Name
-      value: buttonmanager
+      value: UiManager
       objectReference: {fileID: 0}
     - target: {fileID: 3936237523776656726, guid: 2a497351612e77d4e8fadcf1529c5c46, type: 3}
       propertyPath: Player
@@ -3288,3 +3331,4 @@ SceneRoots:
   - {fileID: 1774128693}
   - {fileID: 431378492}
   - {fileID: 114178794}
+  - {fileID: 1960865071}

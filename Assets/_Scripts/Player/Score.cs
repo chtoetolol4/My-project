@@ -1,10 +1,11 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Score : MonoBehaviour
 {   
     public int Count;
-    public TextMeshProUGUI ScoreText;
+    public event Action<int> OnTextUpdate;
 
     void Start()
     {
@@ -13,7 +14,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        ScoreText.text = "Coins: " + Count.ToString();
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,6 +22,7 @@ public class Score : MonoBehaviour
         if (collision.gameObject.CompareTag("Coin"))
         {
             Count++;
+            OnTextUpdate.Invoke(Count);
             Destroy(collision.gameObject);
         }
     }

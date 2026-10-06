@@ -6476,6 +6476,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnMainMenuSomething: {fileID: 1629100768}
+  scoreText: {fileID: 0}
+  MyScore: {fileID: 0}
 --- !u!4 &561413689
 Transform:
   m_ObjectHideFlags: 0
@@ -6564,7 +6566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Score
   Count: 0
-  ScoreText: {fileID: 0}
+  scoreText: {fileID: 936870439}
 --- !u!114 &570938143
 MonoBehaviour:
   m_ObjectHideFlags: 0
